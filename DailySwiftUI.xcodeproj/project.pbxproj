@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		23006E50276FCA2F008FB242 /* DailySwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23006E4F276FCA2F008FB242 /* DailySwiftUIApp.swift */; };
-		23006E52276FCA2F008FB242 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23006E51276FCA2F008FB242 /* ContentView.swift */; };
+		23006E52276FCA2F008FB242 /* Day001.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23006E51276FCA2F008FB242 /* Day001.swift */; };
 		23006E54276FCA30008FB242 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23006E53276FCA30008FB242 /* Assets.xcassets */; };
 		23006E57276FCA30008FB242 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23006E56276FCA30008FB242 /* Preview Assets.xcassets */; };
+		23006E5E277117F5008FB242 /* Day002.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23006E5D277117F5008FB242 /* Day002.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		23006E4C276FCA2F008FB242 /* DailySwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailySwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23006E4F276FCA2F008FB242 /* DailySwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailySwiftUIApp.swift; sourceTree = "<group>"; };
-		23006E51276FCA2F008FB242 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		23006E51276FCA2F008FB242 /* Day001.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day001.swift; sourceTree = "<group>"; };
 		23006E53276FCA30008FB242 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23006E56276FCA30008FB242 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		23006E5D277117F5008FB242 /* Day002.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day002.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,7 @@
 		23006E43276FCA2F008FB242 = {
 			isa = PBXGroup;
 			children = (
+				23006E5D277117F5008FB242 /* Day002.swift */,
 				23006E4E276FCA2F008FB242 /* DailySwiftUI */,
 				23006E4D276FCA2F008FB242 /* Products */,
 			);
@@ -52,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				23006E4F276FCA2F008FB242 /* DailySwiftUIApp.swift */,
-				23006E51276FCA2F008FB242 /* ContentView.swift */,
+				23006E51276FCA2F008FB242 /* Day001.swift */,
 				23006E53276FCA30008FB242 /* Assets.xcassets */,
 				23006E55276FCA30008FB242 /* Preview Content */,
 			);
@@ -137,7 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23006E52276FCA2F008FB242 /* ContentView.swift in Sources */,
+				23006E52276FCA2F008FB242 /* Day001.swift in Sources */,
+				23006E5E277117F5008FB242 /* Day002.swift in Sources */,
 				23006E50276FCA2F008FB242 /* DailySwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
