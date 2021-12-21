@@ -11,39 +11,60 @@ struct MainMenu: View {
 	@State private var showNavBar = true
 	@State private var inlineNavBar = false
 	
-	
     var body: some View {
 		NavigationView {
 			List {
 				Section("Challenges") {
 					Group {
-						NavigationLink("Day 001 - Login Screen", destination: Day001())
-						NavigationLink("Day 002 - List of Places", destination: Day002())
-						Text("Day 003 - Navigation View (This One!)")
+						NavigationLink(destination: Day001()) {
+							Label("Day 001 - Login Screen", systemImage: "key")
+						}
+						NavigationLink(destination: Day002()) {
+							Label("Day 002 - List of Places", systemImage: "list.dash")
+						}
+						
+						Label("Day 003 - Main Screen", systemImage: "platter.filled.top.iphone")
 					}
 					
 					Group {
-						NavigationLink("Day 004 - ?", destination: Text("Not yet!"))
-						NavigationLink("Day 005 - ?", destination: Text("Not yet!"))
-						NavigationLink("Day 006 - ?", destination: Text("Not yet!"))
-						NavigationLink("Day 007 - ?", destination: Text("Not yet!"))
-						NavigationLink("Day 008 - ?", destination: Text("Not yet!"))
-						NavigationLink("Day 009 - ?", destination: Text("Not yet!"))
-						NavigationLink("Day 010 - ?", destination: Text("Not yet!"))
+						NavigationLink(destination: Text("Not yet")) {
+							Label("Day 004", systemImage: "questionmark.app.fill")
+						}
+						NavigationLink(destination: Text("Not yet")) {
+							Label("Day 005", systemImage: "questionmark.app.fill")
+						}
+						NavigationLink(destination: Text("Not yet")) {
+							Label("Day 006", systemImage: "questionmark.app.fill")
+						}
+						NavigationLink(destination: Text("Not yet")) {
+							Label("Day 007", systemImage: "questionmark.app.fill")
+						}
+						NavigationLink(destination: Text("Not yet")) {
+							Label("Day 008", systemImage: "questionmark.app.fill")
+						}
+						NavigationLink(destination: Text("Not yet")) {
+							Label("Day 009", systemImage: "questionmark.app.fill")
+						}
+						NavigationLink(destination: Text("Not yet")) {
+							Label("Day 010", systemImage: "questionmark.app.fill")
+						}
 					}
 					.disabled(true)
 				}
 				
 				Section("Settings") {
-					Toggle("Show NavBar", isOn: $showNavBar)
-					Toggle("Inline NavBar", isOn: $inlineNavBar)
+					Toggle(isOn: $showNavBar) {
+						Label("Show NavBar", systemImage: showNavBar ? "eye" : "eye.slash")
+					}
+					
+					Toggle(isOn: $inlineNavBar) {
+						Label("Inline NavBar", systemImage: !inlineNavBar ?  "arrow.up.left.and.arrow.down.right" : "arrow.down.right.and.arrow.up.left")
+					}
 				}
-				
 			}
 			.navigationTitle("10 Minute SwiftUI")
 			.navigationBarHidden(!showNavBar)
 			.navigationBarTitleDisplayMode(inlineNavBar ? .inline : .large)
-			
 		}
     }
 }
