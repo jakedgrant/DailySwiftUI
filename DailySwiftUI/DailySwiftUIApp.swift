@@ -11,7 +11,7 @@ import SwiftUI
 struct DailySwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            Day001()
+            MainMenu()
         }
     }
 }
