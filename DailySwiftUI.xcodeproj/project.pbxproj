@@ -37,7 +37,6 @@
 		23006E43276FCA2F008FB242 = {
 			isa = PBXGroup;
 			children = (
-				23006E5D277117F5008FB242 /* Day002.swift */,
 				23006E4E276FCA2F008FB242 /* DailySwiftUI */,
 				23006E4D276FCA2F008FB242 /* Products */,
 			);
@@ -56,6 +55,7 @@
 			children = (
 				23006E4F276FCA2F008FB242 /* DailySwiftUIApp.swift */,
 				23006E51276FCA2F008FB242 /* Day001.swift */,
+				23006E5D277117F5008FB242 /* Day002.swift */,
 				23006E53276FCA30008FB242 /* Assets.xcassets */,
 				23006E55276FCA30008FB242 /* Preview Content */,
 			);
